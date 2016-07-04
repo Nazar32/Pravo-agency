@@ -1,0 +1,333 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1280px) {
+	.text  {
+		top: 38%;
+	}
+
+	.main-content .person {
+		right: 3%;
+	}
+
+	.btn-play {
+		top: 28%;
+	}
+
+	.left-row {
+		height: auto;
+	}
+
+}
+
+@media only screen and (max-width : 1168px) {
+	
+	.comment.top, .comment.bottom {
+		float: left;
+		margin-left: 17%;
+		padding-right: 0;
+    	width: 59%;
+	}
+	
+	.comment.bottom {
+		width: 57%;
+	}
+
+
+	.modal-left , .modal-right{
+	    margin-left: 13%;
+	    width: 60%;
+	}
+
+	.modal-left button, .modal-right button {
+		left: 26%;
+		height: 45px;
+		width: 120px;
+		padding: 3px;
+	}
+
+	.modal-left img, .modal-right img { 
+		display: none;
+	}
+
+	.right-row, .left-row {
+		margin-left: 10%;
+	}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	h1 {
+		font-size: 20px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	.text  {
+		padding-top: 5%;
+	}
+
+	.main-content .person {
+	    bottom: 0;
+	    float: right;
+	    max-width: 300px;
+	}
+
+	.main-content {
+		height: 420px; 
+	}
+
+	.main-content .btn-prices {
+		bottom: 2%;
+	}
+
+	.modal-left button, .modal-right button {
+		left: 28%;
+	}
+	
+	.right-row, .left-row {
+		margin-left: 4%;
+	}
+	
+}
+
+
+
+@media only screen and (max-width : 850px) {
+
+	.main-info {
+		width: 35%;
+		margin-left: 10%;
+	}
+
+	.additional-info {
+		width: 35%;
+		margin-right: 10%;
+	}
+
+	.btn-send {
+		top: 96%;
+	}
+
+}
+
+@media only screen and (max-width : 812px) {
+	
+	.main-content .person {
+		display: none;
+	}
+
+	.modal-left button, .modal-right button {
+		left: 35%;
+	}
+
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	nav ul li{
+		float: none;
+		text-align: center;
+		margin-right: 0;
+		margin-top: 15px;	
+	}
+
+	nav {
+		padding-left: 40%;
+		padding-right: 40%;
+	}
+
+	
+	.text  {
+		padding-top: 15%;
+		top: 40%;
+	}
+	
+	.main-title {
+		padding-top: 0;
+	}
+
+	.btn-play {
+		top: 39%;
+	}
+
+	.main-content .btn-prices {
+		bottom: 2%;
+	}
+
+	.comment.top, .comment.bottom {
+    	margin-left: 14%;
+    	float: left;
+    	width: 59%;
+    	padding-right: 10%;
+    	margin-top: 10%;
+    	height: auto;
+	}
+
+	.modal-left , .modal-right {
+	    margin-left: 4%;
+	    width: 75%;
+	}
+
+	.modal-left button, .modal-right button {
+		left: 30%;
+	}
+
+	
+}
+
+
+@media only screen and (max-width : 600px) {
+	
+	.recall.left, .recall.middle, .recall.right {
+		width: 60%;
+		margin-left: 24%;
+	}
+
+	.recall.middle, .recall.right {
+		margin-top: 10%;
+	}
+
+	.main-info, .additional-info { 
+		float: left;
+		margin-left: 20%;
+		width: 60%;
+	}
+
+	.additional-info { 
+		margin-top: 2%;	
+	}
+
+	.btn-send {
+		top: 97%;
+	}
+
+	.comment.top, .comment.bottom {
+    	padding-right: 14%;
+    }
+
+	.modal-left , .modal-right{
+	    margin-left: 4%;
+	    width: 87%;
+	}
+
+	.modal-left button, .modal-right button {
+		left: 33%;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)  {
+	.text  {
+		padding-top: 18%;
+		
+	}
+
+	.head-content p {
+		font-size: 14px;
+	}
+
+	.btn-play {
+	    height: 60px;
+	    left: 69%;
+	    top: 43%;
+	    width: 60px;
+	}
+
+	.btn-play img {
+	    left: 40%;
+	    position: absolute;
+	    top: 35%;
+	}
+
+	.main-content .btn-prices {
+		bottom: 2%;
+	}
+
+	.main-title {
+		padding-top: 0;
+	}
+
+	.main .title::after {
+	    right: 45.5%;
+	}
+
+	.comment.top, .comment.bottom  {
+    	margin-left: 5%;
+    	float: left;
+    	padding-right: 20%;
+    	padding-bottom: 0;
+    	margin-top: 10%;
+	}
+	
+	footer .contacts, footer a {
+		font-size: 15px;
+	}
+
+	.modal-left button, .modal-right button {
+		left: 42%;
+	}
+	
+}
+
+@media only screen and (max-width : 420px)  {
+	.comment.top, .comment.bottom {
+		padding-right: 20%;
+	}
+
+	.right-row .comment.top, .right-row .comment.bottom {
+		padding-right: 36%;
+	}
+
+	.modal-left button, .modal-right button {
+		left: 48%;
+	}
+
+	.interests{
+		width: 106%;
+		margin-left: 0;
+	}
+
+	textarea {
+		width: 92%;
+		margin-left: 0;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+
+}

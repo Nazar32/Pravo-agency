@@ -1,0 +1,868 @@
+@import url(reset.css);
+$hover-color: #a70c5d;
+$header_bg: #f5f5f5;
+$btn-bg : #a70c5d;
+
+@mixin clearfix {
+  display: inline-block;
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+body {
+	font: 15px  "Gotham Pro";
+	width: 100%;
+}
+
+h1 {
+	font-size: 30px;
+	color: #454545;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 28px;
+	color: #3f4147;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+header {
+	width: 100%;
+	padding-top: 48px;
+	background: $header_bg;
+}
+
+nav{
+	float: right;
+	padding: 15px 24% 23px 0;
+}
+
+nav ul {
+	margin-right: 10%;
+}
+
+nav ul li{
+	float: left;
+	margin-right: 33px;
+}
+
+nav ul li a{
+	text-decoration:  none;
+	text-transform: uppercase;
+	font-size: 11.75px;
+	color: #3f4147;
+	display: block;
+	padding-bottom: 4px;
+	border-bottom: 2px solid #f5f5f5;
+}
+
+nav ul li a:hover{
+	color: $hover-color;
+	border-bottom: 2px solid #9f2263;
+}
+
+nav ul li:last-child{
+	margin-right: 0;
+}
+
+#logo {
+	width: 110px;
+	height: 51px;
+	float: left;
+	margin-left: 8.5%;
+}
+
+.row {
+	@include clearfix;
+	width: 100%;
+	position: relative;
+}
+
+.switch-language {
+	position: absolute;
+	margin: 5px 0 13px 0;
+	right: 12.5%;
+}
+
+
+.switch-language button {
+	height: 34px;
+	width: 67px;
+	cursor: pointer;
+	border-radius: 15px;
+	border: 1px solid #dfdfe2;
+	background-image: url(../img/btn-language.png);
+	padding: 7px 14px 9px 33px;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.switch-language button:hover {
+	color: $hover-color;
+	border: 1px solid $hover-color;
+}
+
+
+.container {
+	width: 100%;
+	position: relative;
+	background: #fff;
+}
+
+.top-content {
+	background: $header_bg;
+}
+
+.main-content {
+	@include clearfix;
+	height: 550px;
+	width: 100%;
+	background: $header_bg;
+}
+
+.main-content .person {
+	float: right;
+	width: 100%;
+	max-width: 398px;
+	max-height: 562px;
+	position: absolute;
+	right: 17.3%;
+	bottom: 0;
+}
+
+.main-content .person img {
+	max-width: 100%;
+	height: auto;
+}
+
+.main-title {
+	width: 23%;
+	float: left;
+	padding-bottom: 2.4%;
+	position: relative;
+	padding-top: 54px;
+	margin-bottom: 40px;
+}
+
+.main-title:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 39px;
+	border-bottom: 2px solid #9f2263;
+	content:"";
+}
+
+.main-title, .text {
+	margin-left: 8.7%;
+}
+
+.text {
+	float: left;
+	color: rgb(65,66,82);
+	opacity: .8;
+	font-weight: 100;
+	position: absolute;
+	top: 35%;
+	line-height: 24px;
+	font-weight: 0;
+	max-width: 445px;
+	padding-top: 3.7%;
+	padding-left: .2%;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.main-content .btn-prices {
+	position: absolute;
+	bottom: 10.1%;
+	left: 8.75%;
+	width: 180px;
+	height: 50px;
+	background-color: rgb(190,12,93);
+	background-image: url(../img/btn-prices-bg.png);
+	background-repeat: no-repeat;
+	background-position: 16px 14px;
+	border: none;
+	border-radius: 25px;
+	text-transform: uppercase;
+	padding: 15px 28px 16px 50px;
+	font-size: 11px;
+	color: #fff;
+	font-weight: bold;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.btn-play button {
+	height: 100%;
+	width: 100%;
+	border-radius: 45px;
+	border: none;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.btn-play {
+	position: absolute;
+	left: 42.5%;
+	top: 38%;
+	height: 90px;
+	width: 90px;
+}
+
+.btn-play img {
+	position: absolute;
+	left: 45%;
+	top: 40%;
+	cursor: pointer;
+}
+
+.main .title {
+	text-align: center;
+	position: relative;
+	display: block;
+	padding-bottom: 15px;
+	padding-right: 8%;
+}
+
+.main .title:after {
+	position:absolute;
+	bottom: 0;
+	right: 52.6%;
+	width: 39px;
+	border-bottom: 2px solid #9f2263;
+	content:"";
+	margin-top: 40px;
+}
+
+.notes {
+	@include clearfix;
+	width: 100%;
+
+}
+
+#prices .head-content p, #notes p, #comments p {
+	text-align: center;
+	margin-top: 10px;
+	color: rgb(65,66,82);
+	opacity: .8;
+	line-height: 22px;
+	font-weight: 0;
+	padding-right: 8%;
+
+}
+
+#prices p strong {
+	font-weight: bold;
+}
+
+.head-content {
+	padding-bottom: 50px;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.comment, .modal-left, .modal-right {
+	margin-top: 60px;
+	padding-top: 8px;
+	padding-bottom: 64px;
+	padding-left: 66px;
+	cursor: pointer;
+	width: auto;
+	font-size: 13px;
+}
+
+.comment.bottom {
+	margin-top: 56px;
+}
+
+
+.comment.top {
+	height: 140px;
+}
+
+.left-row .comment.top {
+	background: url(../img/1com-bg.png) no-repeat left top;
+	background-size: 38px 44px;
+	background-fill: #ff0000;
+}
+
+.left-row .comment.top:hover {
+	background: url(../img/1com-bg-hover.png) no-repeat left top;
+
+}
+
+button.info:hover {
+	background-color: $hover-color;
+	color: #fff;
+}
+
+.right-row .comment.top {
+	background: url(../img/2com-bg.png) no-repeat left top;
+}
+
+.right-row .comment.top:hover {
+	background: url(../img/2com-bg-hover.png) no-repeat left top;
+}
+
+.left-row .comment.bottom {
+	background: url(../img/3com-bg.png) no-repeat left top;
+}
+
+.left-row .comment.bottom:hover {
+	background: url(../img/3com-bg-hover.png) no-repeat left top;
+}
+
+.right-row .comment.bottom {
+	background: url(../img/4com-bg.png) no-repeat left top;
+}
+
+.right-row .comment.bottom:hover {
+	background: url(../img/4com-bg-hover.png) no-repeat left top;
+}
+
+.left-row .comment {
+	padding-right : 14%;
+	position: relative;
+}
+
+.left-row {
+	float: left;
+	margin-left: 9%;
+	height: 542px;
+}
+
+.right-row {
+	float: right;
+	margin-right: 7%;
+}
+
+
+.right-row .comment {
+	padding-right : 13%;
+	position: relative;
+}
+
+.comment.right {
+	padding-right: 50px;
+	position: relative;	
+	margin-left: 50px;
+	margin-right: 30px;
+}
+
+.comment h3 {
+	font: 15px 'Gotham Pro';
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 20px;
+	color: #414252;
+	opacity: .8;
+}
+
+.comment ul, .comment p, .interests ul, .modal-left, .modal-right {
+	color: rgb(65,66,82);
+	opacity: .8;
+	line-height: 21px;
+
+}
+
+.comment ul, {
+	list-style-image: url(../img/ul-marker-hover.png);
+}
+
+.comment ul li {
+	padding-left: 10px;
+	margin-left: 15px;
+}
+
+
+.modal-left, .modal-right {
+	display: none;
+	margin-top: 4%;
+	margin-left: 10%;
+	position: relative;
+	width: 38%;
+	float: left;
+	padding-left: 0;
+}
+
+.modal-right {
+	float: left;
+}
+
+.modal-left button, .modal-right button {
+	left: 38%;
+}
+
+.modal-left img {
+	position: absolute;
+	top: 0;
+	right: -15%;
+}
+
+.modal-right img {
+	position: absolute;
+	top: 0;
+	left: -15%;
+}
+
+.modal-left table, .modal-right table{
+	font: 13px 'Gotham Pro';
+	color: #414252;
+	line-height: 22px;
+}
+
+.modal-left table h3, .modal-right table h3{
+	font: 15px 'Gotham Pro';
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 24px;
+	
+} 
+
+.modal-left table #header, .modal-right table #header {
+	vertical-align: top;
+}
+
+.modal-left table .text-block, .modal-right table .text-block{
+	padding-top: 15px;
+}
+
+.modal-left table span, .modal-right table span {
+	font-weight: bold;
+	color: #000;
+	opacity: 1;
+	font-size: 13px;
+}
+
+.modal-left table span.gr, .modal-right table span.gr{
+	font-size: 16px;
+}
+
+.modal-left table .employee, .modal-right table .employee {
+	font-size: 11px;
+}
+
+.modal-left table .price td, .modal-right table .price td {
+	font-size: 11px;
+	font-weight: bold;
+	padding-top: 15px;
+}
+
+.modal-left td p, .modal-right td p  {
+	padding-top: 5px;
+	padding-right: 40px;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+p {
+	margin-top: 18px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+
+button.info {
+	border-radius: 45px;
+	border: 2px solid #a70c5d;
+	background-color: #fff;
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+	font: 16px 'Bandera Pro';
+	font-weight: bold;
+	position: absolute;
+	top: 15px;
+	right: 50px;
+}
+
+.right-row button.info {
+	right: 84px;
+}
+
+.top-row, .bottom-row {
+	@include clearfix;
+	width: 100%;
+}
+
+.left-row .comment.top, .right-row .comment.top  {
+	border-bottom: 1.5px dashed #f4f4f4;
+}
+
+.title h2 {
+	 margin-top: 50px;
+}
+
+#comments .title h2 {
+	 margin-top: -5px;
+}
+
+.recall.middle, .recall.right {
+	float: left;
+	margin-left: 4%;
+	position: relative;
+}
+
+.recall.left {
+	margin-left: 5.7%;
+}
+
+.recall.middle, .recall.right {
+	margin-left: 3.9%;
+}
+
+.recall {
+	width: 25%;
+	height: 100%;
+	@include clearfix;
+}
+
+#comments .recall p{
+	text-align: left;
+	font-size: 17px;
+}
+
+#comments {
+	border-bottom: 1px solid #f4f4f4;
+	padding-top: 3.2%;
+}
+
+.recall img {
+	left: 0;
+	top: 0;
+}
+
+.recall .video img {
+	width: 91%;
+}
+
+#comments .container {
+	width : 100%;
+	margin-top: 74px;
+}
+
+.recall button {
+	cursor: pointer;
+}
+
+.recall.left button, .recall.middle button{
+	border: none;
+	background: url(../img/person1.jpg) no-repeat -6px -4px;
+	width: 51px;
+	height: 54px;
+	border-radius: 100%;
+	margin-top: 30px;
+}
+
+.recall.middle button {
+	background: url(../img/person2.jpg) no-repeat -6px -8px;
+	width: 51px;
+	height: 54px;
+}
+
+#comments .recall .initials p, #comments .recall .company-name p{
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+#comments .recall .company-name p {
+	font-size: 12px;
+}
+
+#comments .recall .main-text p{
+	margin-top: 16px;
+	line-height: 25px;
+}
+
+#comments .recall.right .video {
+	position: relative;
+	margin-top: 3%;
+}
+
+#comments .recall.right button {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	border: none;
+	background: url(../img/btn-video-play.png) no-repeat 50% 50%;
+	cursor: pointer;
+}
+
+.btn-video-play {	
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	left: 46%;
+	z-index: 100;
+	top: 50%;
+	border-radius: 50%;
+	background: #fff;
+	margin: -20px 0 0 -20px;
+}
+
+.recall.right {
+	display: inline-block;
+}
+
+span.point {
+	vertical-align: 3px;
+	color: $hover-color;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 0;
+	margin: 0 2%;
+}
+
+#comments .load-more {
+	display: inline-block;
+	width: auto;
+	margin: 4.9% 0 4% 40.5%;
+}
+
+.load-more {
+	cursor: pointer;
+	display: block;
+}
+
+.load-more img {
+	width: 23px;
+	height: 20px;
+	float: left;
+}
+
+.load-more span {
+	font: 11px 'Gotham Pro';
+	line-height: 24px;
+	color: #414252;
+	font-weight: bold;
+	margin-left: 10px;
+	text-transform: uppercase;
+}
+
+.main-info {
+	float: left;
+	width: 30%;
+	height: auto;
+	margin-left: 16%;
+}
+
+.main-info input:first-child{
+	margin-top: 11px;
+}
+
+.main-info input {
+	width: 100%;
+	margin-top: 28px;
+	border: none;
+	border-bottom: 1px solid #dcdcdc;
+	padding-bottom: 7px;
+	font: 11px 'Gotham Pro';
+	color: #414252;
+}
+
+.main-info input:focus {
+	font-weight: bold;
+}
+
+.info-wrapper {
+	margin-top: 3.5%;
+	@include clearfix;
+	position: relative;
+	width: 100%;
+	padding-bottom: 61px;
+}
+
+.interests {
+	border: 1px solid #dcdcdc;
+	margin-top: 12%;
+	margin-left: 1%;
+	width: 93%;
+	margin-bottom: 8%;
+}
+
+h4 {
+	font: 11px 'Gotham Pro';
+	color: #414252;
+	text-transform: uppercase;
+
+}
+
+.interests .header {
+	border-bottom: 1px solid #dcdcdc;
+	padding: 19px 15px 18px 19px;
+	background: url(../img/drop-down-list.png) no-repeat;
+	background-position: 96% 14px;
+
+}
+
+.interests ul {
+	margin: 5.5% -9px;
+	list-style-image: url(../img/ul-marker.png);
+}
+
+.interests ul li {
+	font-size: 13px;
+	margin-left: 10%;
+	padding-left: 3%;
+	line-height: 29px;
+	cursor: pointer;
+}
+
+.interests ul li:hover {
+	color: $hover-color;
+	font-weight: bold;
+	list-style-image: url(../img/ul-marker-hover.png);
+}
+
+.additional-info {
+	float: right;
+	width: 30%;
+	height: 100%;
+	margin-right: 22.7%;
+	font-weight: medium;
+	padding-top: 10px;
+	text-align: left;
+}
+
+textarea {
+	resize: none;
+	border: 1px solid #dcdcdc;
+	margin-top: 10px;
+	width: 86.5%;
+	height: 218px;
+	padding: 15px;
+	font: 15px 'Gotham Pro';
+	color: #dcdcdc;
+	font-weight: 500;
+}
+
+.btn-send {
+	background-color: #be0c5d;
+    border: medium none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    height: 50px;
+    left: 46%;
+    margin: -25px 0 0 -90px;
+    padding: 15px 0;
+    position: absolute;
+    text-transform: uppercase;
+    top: 94.5%;
+    width: 180px;
+}
+
+
+#contacts {
+	padding-bottom: 2%;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+footer {
+	text-align: center;
+	color: #3f4147;
+	font: 11px/24px "Gotham Pro";
+	padding-bottom: 20px;
+	padding-right: 8%;
+}
+
+p.company-name {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 24px;
+}
+
+p.contacts {
+	font-size: 18px;
+	line-height: 30px;
+	margin-bottom: 3px;
+	margin-top: 11px;
+}
+
+footer a {
+	font-size: 18px;
+	color: $hover-color;
+	font-weight: 200px;
+	border-bottom: none;
+	text-decoration: none;
+	opacity: .9;
+	margin-top: 15px;
+}
+
+footer a:link {
+	border-bottom: 1px solid;
+ 	border-bottom-color: #ebd3dd;
+}
+
+footer ul {
+	width: 138px;
+}
+
+footer ul li {
+	float: left;
+	margin-right: 5%;
+}
+
+footer ul li:last-child {
+	margin-right: 0;
+}
+
+footer ul button {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background: #fff;
+	border: 1px solid #dcdcdc;
+	cursor: pointer;
+}
+
+footer ul button i{
+	color: #dcdcdc;
+}
+
+footer ul button:hover i{
+	color: #4a6bb8;
+}
+
+footer ul button:hover {
+	border: 2px solid #4a6bb8;	
+}
+
+.social {
+	@include clearfix;
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+  	margin-top: 1.7%;
+  	margin-left: 1.1%;
+}
+
+p.rights {
+	margin-top: 22px;
+	margin-left: 0.1%;
+}
+
+p.rights strong {
+	font-size: 12px;
+
+}
