@@ -41,6 +41,7 @@ header {
 nav{
 	float: right;
 	padding: 15px 24% 23px 0;
+	width: 330px;
 }
 
 nav ul {
@@ -679,6 +680,7 @@ span.point {
 
 .main-info input:focus {
 	font-weight: bold;
+	outline: none;
 }
 
 .info-wrapper {
@@ -751,6 +753,10 @@ textarea {
 	font: 15px 'Gotham Pro';
 	color: #dcdcdc;
 	font-weight: 500;
+}
+
+textarea:focus {
+	outline: none;
 }
 
 .btn-send {

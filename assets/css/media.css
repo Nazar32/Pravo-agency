@@ -133,11 +133,13 @@
 		text-align: center;
 		margin-right: 0;
 		margin-top: 15px;	
+
 	}
 
 	nav {
 		padding-left: 40%;
 		padding-right: 40%;
+		width: auto;
 	}
 
 	
