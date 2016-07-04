@@ -1,4 +1,8 @@
 @import url(reset.css);
+button:focus {
+  outline: none;
+}
+
 body {
   font: 15px  "Gotham Pro";
   width: 100%;
